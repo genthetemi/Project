@@ -5,7 +5,7 @@
     
 }
 .navbar{
-    background: #30deeb;
+    background: #1f2833;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@
 
 #navbar__logo{
     background-color:#fff ;
-    background-image: linear-gradient(to top, rgb(0, 0, 0) , rgb(23, 224, 231) 100%);
+    background-image: linear-gradient(to top, rgb(23, 224, 231) , rgb(255, 255, 255) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -57,7 +57,7 @@
 }
 
 .navbar__links{
-    color: #fff;
+    color: #66fcf1;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -85,12 +85,12 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: rgb(81, 88, 82);
+    background: #66fcf1;
     color: #fff;
 }
 
 .button:hover{
-    backround:#fff;
+    backround:rgb(255, 255, 255);
     transition: all 0.3s ease;
 }
 
@@ -124,7 +124,7 @@
     }
 
     .navbar__menu.active{
-        background: #30deeb;
+        background: #1f2833;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;

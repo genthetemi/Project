@@ -1,5 +1,6 @@
 *{
     margin: 0px;
+    
     padding: 0px;
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
@@ -14,6 +15,7 @@ ul{
 }
 
 body{
+    background: lightblue;
     margin: 0px;
     padding: 0px;
     font-family: 'Nunito', sans-serif;

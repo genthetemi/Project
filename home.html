@@ -23,19 +23,12 @@
         <nav class="navbar">
             <a href="home.html">home</a>
             <a href="news.html">news</a>
-            <a href="#pictures">pictures</a>
-            <a href="#contact">contact</a>
+            <a href="pictures.html">pictures</a>
         </nav>
 
         <div class="icons">
-            <i class="fas fa-search" id="search-btn"></i>
             <i class="fas fa-user" id="login-btn"></i>
         </div>
-
-        <form action="" class="search-bar-container">
-            <input type="search" id="search-bar" placeholder="search-here...">
-            <label for="search-bar" class="fas fa-search"></label>
-        </form>
 
     </header>
 
@@ -48,14 +41,22 @@
         <i class="fas fa-times" id="form-close"></i>
 
         <form action="">
-            <h3>login</h3>
-            <input type="email" class="box" placeholder="enter your email">
-            <input type="password" class="box" placeholder="enter your password">
-            <input type="submit" value="login now " class="btn">
-            <input type="checkbox" id="remember">
-            <label for="remember">remember me</label>
-            <p>forget password? <a href="#">click here</a></p>
-            <p>don't have an account <a href="#">register now</a></p>
+                <h3>Sign in</h3>
+    
+                <input class="box" type="email" id="email" placeholder="Email">
+                <br>
+                <label class="incorrectemail" style="color: red;" id="incorrectEmail" for="email"></label>
+                <br>
+                <input class="box" type="password" id="password" placeholder="Password">
+                <br>
+                <label class="incorrectpassword" style="color: red;" for="password" id="incorrectPassword"></label>
+                <br>
+                <a  class="loginlink" href=""><button class="btn" id="signinButton" value="Sign in">Sign in</button></a>
+                <br>
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me</label>
+                <p>forget password? <a href="#">click here</a></p>
+                <p>don't have an account <a href="#">register now</a></p>
         </form>
 
     </div>

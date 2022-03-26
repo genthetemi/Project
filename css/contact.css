@@ -1,0 +1,17 @@
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 9%;
+}
+header .navbar a{
+    color:#fff;
+    font-size: 2rem;
+    text-decoration: none;
+}

@@ -36,8 +36,127 @@
 
 </header>
 
-<!-- Header section ends -->
+<div id="contact-form">
+    
+    <form id="form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    
+    <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+    </div>
 
-</div>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5 url('/images/001\ \(10\).jpg') center/cover no-repeat;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+#contact-form img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#contact-form form {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #217dbb;
+}
+
+.error {
+    color: #e74c3c;
+    margin-top: -8px;
+    margin-bottom: 16px;
+}
+</style>
+
+
+
+<script>
+function validateForm() {
+var name = document.getElementById("name").value;
+var email = document.getElementById("email").value;
+var message = document.getElementById("message").value;
+
+var nameRegex = /^[a-zA-Z ]+$/;
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (!nameRegex.test(name)) {
+    alert("Please enter a valid name");
+    return;
+}
+
+if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address");
+    return;
+}
+
+if (message.trim() === "") {
+    alert("Please enter a message");
+    return;
+}
+
+// If all validations pass, you can submit the form or perform other actions
+alert("Form submitted successfully!");
+// You may also use document.getElementById("form").submit() to submit the form
+}
+</script>
+
+
 </body>
 </html>

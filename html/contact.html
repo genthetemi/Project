@@ -7,7 +7,7 @@
     <title>Contact Page</title>
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/js/script.js">
+    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -24,7 +24,8 @@
     <nav class="navbar">
         <a href="/html/home.html">home</a>
         <a href="/html/news.html">news</a>
-        <a href="/html/pictures.html">pictures</a>
+        <a href="/html/products.html">products</a>
+        <a href="/html/about.html">about </a>
         <a href="/html/contact.html">Contact us</a>
     </nav>
 
@@ -40,90 +41,17 @@
     
     <form id="form">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" id="name" name="name" required placeholder="Enter your Name">
     
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required placeholder="Enter your Email">
     
     <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
+    <textarea id="message" name="message" rows="4" required placeholder="Write your questions here, We will respond you in a fast time"></textarea>
     
     <button type="button" onclick="validateForm()">Submit</button>
     </form>
     </div>
-
-<style>
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f5f5 url('/images/001\ \(10\).jpg') center/cover no-repeat;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-#contact-form {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 400px;
-    width: 100%;
-    margin: auto;
-}
-
-#contact-form img {
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-#contact-form form {
-    padding: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #333;
-}
-
-input, textarea {
-    width: calc(100% - 16px);
-    padding: 10px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: border-color 0.3s ease;
-}
-
-input:focus, textarea:focus {
-    border-color: #3498db;
-}
-
-button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #217dbb;
-}
-
-.error {
-    color: #e74c3c;
-    margin-top: -8px;
-    margin-bottom: 16px;
-}
-</style>
 
 
 

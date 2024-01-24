@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let menu = document.querySelector('#menu-bar');
     let navbar = document.querySelector('.navbar');
     let videoBtn = document.querySelectorAll('.vid-btn');
+    let registerLink = document.querySelector('.register-link a');
+    let registerForm = document.querySelector('#registerForm');
+    let loginForm = document.querySelector('#loginForm');
+    let videoSlider = document.querySelector('#video-slider');
 
     window.onscroll = () => {
         menu?.classList.remove('fa-times');
@@ -22,13 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector('.controls .active')?.classList.remove('active');
             btn.classList.add('active');
             let src = btn.getAttribute('data-src');
-            document.querySelector('#video-slider').src = src;
+            videoSlider.src = src;
         });
     });
 
     window.addEventListener('DOMContentLoaded', (event) => {
-        let videoSlider = document.querySelector('#video-slider');
-
         if (videoSlider && !videoSlider.paused) {
             videoSlider.play();
         }
@@ -37,4 +39,23 @@ document.addEventListener("DOMContentLoaded", function () {
             videoSlider?.play();
         });
     });
+
+    function showRegisterForm() {
+        registerForm.style.display = 'block';
+        loginForm.style.display = 'none';
+    }
+
+    function showLoginForm() {
+        registerForm.style.display = 'none';
+        loginForm.style.display = 'block';
+    }
+
+    if (registerLink) {
+        registerLink.addEventListener('click', function (event) {
+            event.preventDefault();
+            showRegisterForm();
+        });
+    }
+
+    // Assuming there is a login link that triggers showLoginForm() similarly...
 });

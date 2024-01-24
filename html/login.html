@@ -131,7 +131,7 @@
     </nav>
 
     <div class="icons">
-        <a href="/html/admin.php">
+        <a href="/html/admin.html">
             <i class="fas fa-user" id="login-btn"></i>
         </a>
     </div>
@@ -148,7 +148,7 @@
 
   <div id="forms-container">
     <form id="loginForm">
-      <h2>Login User</h2>
+      <h2>Login</h2>
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required>
 
@@ -162,6 +162,7 @@
       </div>
     </form>
 
+    
     <form id="registerForm" style="display:none;">
       <h2>Register</h2>
       <label for="name">Name:</label>
@@ -182,10 +183,11 @@
       <button type="button" onclick="validateRegisterForm()">Register</button>
 
       <div class="register-link">
-        Already have an account? <a href="home.html" onclick="showLoginForm()">Login</a>
+        Already have an account? <a href="#" onclick="showLoginForm()">Login</a>
       </div>
     </form>
   </div>
+
 
 </body>
 </html>
